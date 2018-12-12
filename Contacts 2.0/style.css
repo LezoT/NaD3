@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "montserrat";
+}
+body{
+  background: #333;
+}
+.middle{
+  position: absolute;
+  top: 80%;
+  left: 33%;
+  transform: translate(-50%,-50%);
+}
+.card{
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+}
+.front,.back{
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  backface-visibility: hidden;  
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 80%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+  left: 140px;
+}
+.sm{
+  margin: 50px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover {
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.middle2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.card2 {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+}
+
+.middle3{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.card3 {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+}
+
+.middle4{
+  position: absolute;
+  top: 80%;
+  left: 67%;
+  transform: translate(-50%,-50%);
+}
+.card4 {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+}
